@@ -1,0 +1,48 @@
+.wrapper{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap:1rem;
+
+
+
+}
+.child1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1rem;
+    background:black;
+
+
+
+}
+.child2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1rem;
+    background:green;
+}
+
+
+
+.per1{
+    display:grid;
+    grid-row-gap: 1rem;
+    background:rgb(173, 18, 18);
+
+}
+
+
+.per2{
+    display:grid;
+    grid-row-gap: 1rem;
+    background:gray;
+}
+
+@media only screen and (max-width:480px) {
+    .child1{
+     grid-column: span 12;   
+    }
+    .child2{
+        grid-column: span 12;   
+       }
+}
